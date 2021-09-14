@@ -1,0 +1,241 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 694px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-shadow: 0px 0px 2px hsl(120, 100%, 80%), 0px 0px 15px #006bb3,
+    0px 0px 60px #006bb3;
+  animation: crtAnimation 1.2s 0.2s both;
+  animation-timing-function: cubic-bezier(0.2, -0.1, 0, 1);
+}
+
+@keyframes crtAnimation {
+  0% {
+    transform: scaleY(0) scaleX(0);
+    filter: brightness(15) blur(0px);
+  }
+  20% {
+    transform: scaleY(0.02) scaleX(0.8);
+    filter: brightness(15) blur(0px);
+  }
+}
+
+.component {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+@keyframes moveDownAnimation {
+  100% {
+    background-position-y: 100%;
+  }
+}
+
+.crt-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url('https://www.lofi.cafe/images/lines.jpg');
+  background-size: 7px auto;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  opacity: 0.4;
+  animation: moveDownAnimation 150s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  background: #aaa;
+  background-image: url('https://i.pinimg.com/originals/5f/ee/8e/5fee8e4a9fea271529cfd8828dd990d5.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -2;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+.modal-box {
+  padding: 30px;
+  background-color: #fff;
+  text-shadow: none;
+  color: #000;
+  border: 4px #000 solid;
+  max-width: 500px;
+}
+
+.modal-title {
+  margin-bottom: 30px;
+}
+
+.modal-content {
+  margin-bottom: 30px;
+}
+
+.modal-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Custom css                                 */
+/* -------------------------------------------------------------------------- */
+.nes-btn {
+  margin: 0px 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Section                                  */
+/* -------------------------------------------------------------------------- */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  border: 4px #000 solid;
+}
+
+/* -------------------------------- Pomodoro -------------------------------- */
+
+#pomodoro .list {
+  margin-bottom: 30px;
+}
+
+#pomodoro .timer {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+#pomodoro .status {
+  margin-bottom: 30px;
+}
+
+#pomodoro .progress {
+  padding: 0px 19px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#pomodoro .action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* --------------------------------- Header --------------------------------- */
+#header .root {
+  width: 100%;
+  display: flex;
+  padding: 0px 4px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+#footer .root {
+  width: 100%;
+  display: flex;
+  padding: 0px 4px;
+  flex-direction: column;
+}
+
+#footer .nes-balloon p {
+  color: #000;
+  text-shadow: none;
+}
+
+#footer .nes-mario {
+  margin-bottom: 15px;
+}
+
+#footer .my-name {
+  font-size: 8px;
+}
+
+/* ------------------------------ Radio YouTube ----------------------------- */
+#radio-youtube .title {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#radio-youtube .music-play-spin {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin-right: 30px;
+  border: 4px #000 solid;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#radio-youtube .play-box {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#radio-youtube .play-current {
+  display: flex;
+  width: 100%;
+}
+
+#radio-youtube .play-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#radio-youtube .play-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#radio-youtube .music-list {
+  width: 100%;
+}
+
+#radio-youtube .music-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}

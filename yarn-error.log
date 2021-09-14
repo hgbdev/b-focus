@@ -1,0 +1,38 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react react-dom @types/react @types/react-dom – save
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\KhuonViet\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\Program Files\erl10.3\bin;C:\Program Files\Go\bin;C:\Program Files\nodejs;C:\Users\KhuonViet\Downloads\nvim-win64\Neovim\bin;C:\Users\KhuonViet\AppData\Local\Android\Sdk\platform-tools;C:\Users\KhuonViet\AppData\Local\Microsoft\WindowsApps;C:\Users\KhuonViet\AppData\Local\Yarn\bin;C:\Users\KhuonViet\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\KhuonViet\go\bin;C:\Users\KhuonViet\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
+      at new ClientRequest (_http_client.js:155:13)
+      at Object.request (https.js:326:10)
+      at Request.module.exports.Request.start (C:\Program Files (x86)\Yarn\lib\cli.js:141311:32)
+      at Request.module.exports.Request.end (C:\Program Files (x86)\Yarn\lib\cli.js:142070:10)
+      at end (C:\Program Files (x86)\Yarn\lib\cli.js:141124:14)
+      at Immediate._onImmediate (C:\Program Files (x86)\Yarn\lib\cli.js:141138:7)
+      at processImmediate (internal/timers.js:462:21)
+
+npm manifest: 
+  {
+    "name": "react-ts-parcel",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
